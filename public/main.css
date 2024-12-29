@@ -39,3 +39,39 @@ body {
   color: var(--clr-primary-500);
   background-color: var(--clr-primary-50);
 }
+
+.flow > * + * {
+  margin-inline-start: var(--space-m);
+}
+
+.page__title {
+  font-size: var(--fs-4);
+}
+
+.page__subtitle {
+  font-size: var(--fs-2);
+}
+
+.card {
+  --card-fs: var(--fs-2);
+  --card-space: var(--space-m);
+  --card-br-space: var(--space-s);
+  --card-shadow: 0 var(--space-s) var(--space-s) var(--space-s) hsla(0, 0, 0, 0.5);
+
+  border-top-left-radius: var(--card-br-space);
+  border-top-right-radius: var(--carf-br-space);
+  border-bottom-left-radius: var(--card-br-space);
+  border-bottom-left-radius: var(--card-br-space);
+
+  overflow: hidden;
+
+  box-shadow: var(--card-shadow);
+}
+
+.card__title {
+  font-size: var(--card-fs);
+  padding-block-start: var(--card-space);
+  padding-block-end: var(--card-space);
+  padding-inline-start: var(--card-space);
+  padding-inline-end: var(--card-space);
+}
